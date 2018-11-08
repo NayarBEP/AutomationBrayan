@@ -42,7 +42,7 @@ public class MainTest {
 
     }
 
-    @Test (priority = 2, enabled = false)
+    @Test (priority = 2)
     public void dataExcel() throws IOException {
         File file = new File("/Users/brayanposada/IdeaProjects/TestingActions/src/Docs/UsersData.xlsx");
         FileInputStream fis = new FileInputStream(file);
@@ -52,7 +52,7 @@ public class MainTest {
         System.out.println(dato1);
     }
 
-    @Test (priority = 3, enabled = false)
+    @Test (priority = 3)
     public void VerifyFacebookTitle(){
         File path = new File("/Users/brayanposada/Documents/phantomjs-2.1.1-macosx/bin/phantomjs");
         System.setProperty("phantomjs.binary.path",path.getAbsolutePath());
